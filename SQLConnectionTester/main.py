@@ -11,7 +11,7 @@ try:
         db_Info = connection.get_server_info()
         print("Connected to MySQL Server version ", db_Info)
         cursor = connection.cursor()
-        cursor.execute("SELECT * FROM ratings LIMIT 10;")  # replace 'your_table' with the name of your table
+        cursor.execute("SELECT * FROM your_table LIMIT 10;")  # replace 'your_table' with the name of your table
 
         rows = cursor.fetchall()
         for row in rows:
